@@ -33,7 +33,7 @@ RUN curl -O https://bootstrap.pypa.io/get-pip.py && \
     rm get-pip.py
 
 # Install TensorFlow, Keras and PyTorch
-RUN pip install tensorflow-gpu==${TENSORFLOW_VERSION} keras h5py matplotlib functools copy numpy
+RUN pip install tensorflow-gpu==${TENSORFLOW_VERSION} keras h5py matplotlib
 RUN pip3 install torch torchvision
 
 # Install Open MPI
